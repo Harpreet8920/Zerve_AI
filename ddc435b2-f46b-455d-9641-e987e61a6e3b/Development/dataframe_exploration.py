@@ -1,0 +1,5 @@
+df = pd.read_csv("Zerve_dataset.csv")
+print(df.head(10))
+print(df.describe)
+print(df.shape)
+print(df.info())

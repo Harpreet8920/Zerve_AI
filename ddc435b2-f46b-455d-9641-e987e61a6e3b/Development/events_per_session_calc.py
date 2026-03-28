@@ -1,0 +1,1 @@
+user_df['events_per_session'] = user_df['total_events'] / user_df['total_sessions']

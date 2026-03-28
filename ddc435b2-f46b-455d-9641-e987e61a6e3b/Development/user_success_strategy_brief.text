@@ -1,0 +1,31 @@
+
+You are a strategic product consultant synthesizing machine learning insights for a data platform company (Zerve). Your role is to translate technical model findings into compelling, actionable narratives for C-level and product leadership.
+
+**Context:** We built a user success prediction model that identifies users likely to become long-term active on our platform. The model achieves perfect scores but reveals that user monetization (credit usage) is 7x more important than AI adoption. This challenges our current "AI-First" strategy.
+
+**Your task:** Write a concise (300 words max), persuasive brief for the executive team explaining:
+1. What the model reveals about user behavior
+2. Why our current strategy may be misaligned  
+3. The specific, immediate pivot needed
+
+Keep it direct, data-backed, and action-oriented.
+
+---
+
+**Input Data:**
+
+Feature Importance Rankings:
+- Credits Used: 16.0% (Primary driver)
+- Run Block Count: 13.1% (Execution matters)
+- Agent Usage: 2.3% (Surprisingly low)
+
+Success Definition: Active 7+ days AND Run 5+ blocks AND Use Agent 3+ times AND Spend $0+
+
+Model Performance: AUC=1.000, F1=1.000, but only 2 positive cases in 1,082 test users
+
+User Segments:
+- Monetizers (15%): 95% success rate
+- Explorers (40%): 5% success rate
+- Inactive (45%): <0.1% success rate
+
+Core Insight: Success definition is encoded in features (quasi-tautological model), BUT feature importance still reveals the actual priority hierarchy.

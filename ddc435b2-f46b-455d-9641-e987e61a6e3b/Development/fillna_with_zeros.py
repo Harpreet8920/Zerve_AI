@@ -1,0 +1,1 @@
+user_df = user_df.fillna(0)
